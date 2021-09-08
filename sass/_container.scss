@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 28.125rem;
+  height: 750px;
+  background-color: #ffff;
+  border-radius: 30px;
+  box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.3);
+  margin: 10%;
+  & svg {
+    border-radius: 30px 30px 0 0;
+  }
+  & h1 {
+    font-weight: 900;
+    color: $Dark-blue;
+  }
+  & p {
+    font-weight: 500;
+    color: $Desaturated-blue;
+    line-height: 1.9rem;
+    margin: 1rem;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  border-radius: 10px;
+  background-color: $Very-pale-blue;
+  & .plan {
+    margin: 2rem;
+  }
+  & h1 {
+    font-weight: 700;
+    font-size: $p-font;
+    margin: 0;
+  }
+  & p {
+    margin: 0;
+    font-weight: 500;
+  }
+  & a {
+    font-weight: 700;
+    color: $Brigh-blue;
+    transition: all 300ms ease-in-out;
+  }
+  & a:hover {
+    color: $Desaturated-blue;
+    text-decoration: none;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  & .btn {
+    border: none;
+    background-color: $Brigh-blue;
+    color: $Very-pale-blue;
+    font-weight: 900;
+    width: 22.5rem;
+    height: 4.2rem;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  & .btn:hover {
+    background-color: $Desaturated-blue;
+  }
+}
+.form button:last-child {
+  color: $Desaturated-blue;
+  background-color: $Very-pale-blue;
+  transition: color 300ms ease-in-out;
+}
+.form button:last-child:hover {
+  color: $Dark-blue;
+  background-color: $Very-pale-blue;
+}
